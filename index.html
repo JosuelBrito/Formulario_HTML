@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+<body>
+    <h1>Trabalhando com FORMULÁRIOS</h1>
+
+    <form>
+        <div class="inputs">
+            <label for="">Nome:</label>
+            <input type="text" placeholder="Nome:">
+        </div>
+        <br>
+        
+        <br>
+        <br>
+        <br>
+
+        <!--SELECT-->
+        <div>
+            <label for="job">Selecione a sua profissão:</label>
+            <select name="job" >
+            <option value="Selecione"></option>
+            <option value="Programador">Programador</option>
+            <option value="tester">Tester/QA</option>
+            <option value="devops">DevOps</option>
+        </select>
+        </div>
+
+        <br>
+        <br>
+        <!--ATRIBUTO SELECTED-->
+        <div>
+            <label for="jcontract"><b>Você leu os termos do contrato?</b></label>
+            <select name="contract" >
+            <option value="sim">Sim</option>
+            <option value="nao"  selected>Não</option> <!--dexia selecionado não-->
+           
+        </select>
+        </div>
+
+        <br>
+        <br>
+        <div>
+            <!--MULTIPLAS OPÇÕES-->
+            <label for="items">Selecione os itens desejados:</label><br>
+            <select name="items" multiple> <!--multiple-->
+                <option value="pera">Pera</option>
+                <option value="feijao">Feijão</option>
+                <option value="milho">Milho</option>
+                <option value="arroz">Arroz</option>
+            </select>
+        </div>
+
+        <br>
+        <br>
+        <div>
+            <!--TEXTAREA-->
+            <label for="comment">Escreva abaixo o que você acho do post</label><br>
+            <textarea name="comment"></textarea>
+        </div>
+        <br>
+        <br>
+
+        <div>
+            <!--filderset e legend-->
+            <fieldset>
+                <legend>preencha as suas informações:</legend>
+                <label for="firstname">Nome:</label>
+                <input type="text" name="firstname">
+                <label for="lastname">Sobrenome</label>
+                <input type="text" name="lastname">
+            </fieldset>
+        </div>
+
+        <br>
+        <br>
+
+        <div>
+        <!--datalist-->
+        <label for="flavor">Escolha o sabor:</label>
+        <input type="text" list="flavors" name="flavor">
+        
+        <datalist id="flavors">
+            <option value="Cereja"></option>
+            <option value="Morango"></option>
+            <option value="Chocolate"></option>
+
+        </datalist>
+    </div>
+    <br>
+    <br>
+
+    <!--senha-->
+    <div>
+        <h2>Como inserir Senhas</h2>
+        <label for="password">Digite a sua senha:</label>
+        <input type="password" name="password">
+        <hr>
+    </div>
+
+    <br>
+    <br>
+
+         <!--RADIO BUTTON-->
+    <div>
+        <label for="car_model">Escolha o modelo de seu carro:</label>
+        <div>
+            <input type="radio" value="bmw" name="car_model">
+            <label for="bnw">BNW</label>
+        </div>
+
+        <br>
+        <br>
+
+        <!--checkbox-->
+        <div>
+           <label for="optnionals"><strong>Opcionais do carro:</strong></label><br><br>
+           <input type="checkbox" name="optionals[]" value="bi_tires">
+           <label for="bi_tires">Pneus Grandes</label><br>
+           <input type="checkbox" name="optionals[]" value="Hibrido">
+           <label for="Hibrido">Hibrido</label><br>
+           <input type="checkbox" name="optionals[]" value="fox">
+           <label for="fox">Fox</label><br>
+           <input type="checkbox" name="optionals[]" value="carlotas">
+           <label for="carlotas">Carlotas</label>
+
+           <br>
+           <br>
+
+        </div>
+
+         <!--datas-->
+         <div>
+          <label for="datas">Data de Nascimento</label>
+          <input type="date" name="data">
+          </div>
+
+          <br>
+          <br>
+         <!--ANEXO DE IMAGEM-->
+         <div>
+            <label for="img">Enviei sua imagem</label>
+            <input type="file" name="img">
+         </div>
+
+
+         <br>
+         <br>
+         <!--Numeros-->
+
+         <div>
+            <label for="salario"><strong>Informe seu salário R$ </strong></label>
+            <input type="number" name="salario">
+         </div>
+
+         <br>
+         <br>
+
+         <!--Envio de E-mail-->
+         <div>
+            <h2>Envio de E-mail</h2>
+            <label for="email">Informe seu e-mail</label>
+            <input type="email" name="emailusuario">
+            <hr>
+         </div>
+
+         <br>
+        
+
+        <br>
+
+
+        <!--LIMPAR FORMULARIO
+        <div>
+            <input type="reset" value="Limpar">
+        </div>
+
+    -->
+    <!--REQUIRED OBRIGATORIO O PREECHIMENTO-->
+    <div>
+        <label for="birthyear">Ano de Nascimento:</label>
+        <input type="text" placeholder="Digite o ano em que você nasceu" required>
+    </div>
+
+    <div>
+        <h1>Envio de Formulários e Limpar</h1>
+        <!--ENVIO DE FORMULÁRIOS SUBMIT-->
+        
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Limpar">
+    </div>
+    </div>
+
+    </form>
+</body>
+</html>

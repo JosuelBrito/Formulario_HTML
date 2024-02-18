@@ -1,0 +1,6 @@
+@charset "UTF8";
+
+
+.inputs label input{
+    display: block;
+}
