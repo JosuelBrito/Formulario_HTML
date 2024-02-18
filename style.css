@@ -1,6 +1,7 @@
 @charset "UTF8";
 
 
-.inputs label input{
-    display: block;
+body{
+
+    background-color: rgb(137, 199, 178);
 }
